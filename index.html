@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="cart.css"> -->
+    <link rel="website icon" href="images/logo.png" type="png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>ComfortZone</title>
+  </head>
+  <body>
+    <div class="allcontent">
+      <header>
+        <div class="navbar">
+          <a href="#" class="webName"
+            ><i class="fa-solid fa-couch"></i>ComfortZone</a
+          >
+          <ul>
+            <li>
+              <a href="index.html"
+                ><i class="fa-solid fa-house" style="font-size: 1.3rem"></i
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="about.html"
+                ><i
+                  class="fa-brands fa-searchengin"
+                  style="font-size: 1.3rem"
+                ></i
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="product.html"
+                ><i
+                  class="fa-brands fa-product-hunt"
+                  style="font-size: 1.3rem"
+                ></i
+                >Products</a
+              >
+            </li>
+            <li>
+              <a class="opencartbtn" href="product.html"
+                ><i
+                  class="fa-solid fa-cart-shopping"
+                  style="font-size: 1.3rem"
+                ></i
+                >Cart</a
+              >
+            </li>
+            <span class="quantity">0</span>
+            <li>
+              <a href="#" class="signupbtn"
+                ><i
+                  class="fa-solid fa-right-to-bracket"
+                  style="font-size: 1.3rem"
+                ></i
+                >SignUP</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="contentTXT">
+            <h1>Design Your Comfort Zone</h1>
+            <p>
+              we are passionate about helping you create the perfect living
+              spaces that reflect your unique style and personality. Our journey
+              began with a simple idea: to provide high-quality, stylish
+              furniture that doesn't break the bank.
+            </p>
+            <a href="product.html">Shop Now</a>
+          </div>
+          <div>
+            <img src="images/heroImg.jpeg" alt="" />
+          </div>
+        </div>
+      </header>
+      <section id="featured-products">
+        <div class="container">
+          <h2>Featured Products</h2>
+          <div class="featured-products">
+            <div class="featuredProduct">
+              <div class="imgPro">
+                <a href="product.html"><img src="images/Fpro1.jpg" alt="" /></a>
+              </div>
+              <div class="Protext">
+                <a href="product.html">Entertenement Center</a>
+                <a href="product.html">250$</a>
+              </div>
+            </div>
+            <div class="featuredProduct">
+              <div class="imgPro">
+                <a href="product.html"><img src="images/Fpro2.jpg" alt="" /></a>
+              </div>
+              <div class="Protext">
+                <a href="product.html">High Back pensh</a>
+                <a href="product.html">650$</a>
+              </div>
+            </div>
+            <div class="featuredProduct">
+              <div class="imgPro">
+                <a href="product.html"><img src="images/Fpro3.png" alt="" /></a>
+              </div>
+              <div class="Protext">
+                <a href="product.html">Modern Bokkshelf</a>
+                <a href="product.html">2250$</a>
+              </div>
+            </div>
+          </div>
+          <a href="product.html" class="productbtn">All Products</a>
+          <div class="footer">
+            <h2>@All rights reserved 2023</h2>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- =====Sign up===== -->
+    <section>
+      <div class="signup">
+        <button class="closebtn">X</button>
+        <h2 class="signuptext">Welcome to our website!</h2>
+        <form action="">
+          <div id="nameFiled">
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div id="nameFiled">
+            <input type="email" placeholder="Example@gmial.com" />
+          </div>
+          <div id="nameFiled">
+            <input type="password" placeholder="Enter Your Password" />
+          </div>
+          <div id="nameFiled">
+            <input
+              type="password"
+              placeholder="Confirm Your Password"
+              class="confirmpass"
+            />
+          </div>
+          <button class="createacc">Create Your Account</button>
+        </form>
+        <div class="line" id="test">
+          ___________________________________________________________________
+        </div>
+        <div class="byGoogle">
+          <img src="images/googlelogo.png" alt="" />
+          <a href="#">Sign Up with Google</a>
+        </div>
+        <div class="dashedline">
+          ------------------------------------------------------------------------
+        </div>
+        <div>
+          <h3 class="haveacc">Already have an account..!</h3>
+          <button class="signinbtn" onclick="signinhandler()">Sign in</button>
+          <button
+            class="signinbtnnew"
+            style="display: none"
+            onclick="signuphandler()"
+          >
+            Sign up now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="signup.js"></script>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>

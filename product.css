@@ -1,0 +1,133 @@
+:root{
+    --secondarycolor:#decbc0;
+    --primarycolor:#ab7a5f;
+    --primaryFontcolor:#453227;
+    --secondaryFontcolor:#ab7a5f;
+}
+.allproducts{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-left: 8rem;
+    transition: all 0.4s ease;
+}
+
+.featuredAllProduct{
+    width: 18rem;
+    box-shadow: 15px 15px 40px #453227;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    border-radius:0.5rem 0.5rem 0.3rem 0.3rem;
+}
+.featuredAllProduct .ProtextAll{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.5rem;
+}
+
+.featuredAllProduct .ProtextAll a{
+    color: var(--secondaryFontcolor);
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.featuredAllProduct .imgPro a img{
+    width: 100%;
+}
+
+.featuredAllProduct .imgPro::after{
+    content: 'Click the button bellow to see details';
+    background-color: #cecacab6;
+    display: block;
+    width: 100%;
+    height: 100rem;
+    transition: all 0.4s ease;
+    transform: scaleY(0);
+    transform-origin: left;
+}
+
+
+
+.featuredAllProduct .imgPro:hover::after{
+    transform: scaleY(1.1);
+}
+
+.addToCartbtn{
+    border: none;
+    background-color: var(--primaryFontcolor);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+}
+.addToCartbtn:hover{
+    cursor: pointer;
+    background-color: #33231a;
+    transform: scale(1.1);
+}
+
+.proContent h3{
+    color: var(--primaryFontcolor);
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 1.2rem;
+}
+
+.proContent p{
+    color: var(--secondaryFontcolor);
+    font-size: 2.4rem;
+}
+
+.featuredAllProduct .btndiv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.featuredAllProduct .btndiv .details{
+    background-color: #ab7a5f;
+    color: #000;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.4s ease;
+}
+
+.featuredAllProduct .btndiv .details:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.scroll{
+    background-color: #ab7a5f;
+    color: #000;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    transition: all 0.4s ease;
+    margin-left: 95%;
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.scroll:hover{
+    cursor: pointer;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.nothing{
+    background: transparent;
+    padding: 0;
+    color: #ab7a5f;
+    border: none;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+}
+.nothing:hover{
+    cursor: pointer;
+}

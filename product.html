@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="eachpro.css">
+    <link rel="website icon" href="images/logo.png" type="png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ComfortZone</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="index.html" class="webName"><i class="fa-solid fa-couch"></i>ComfortZone</a>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house" style="font-size: 1.3rem;"></i>Home</a></li>
+          <li><a href="about.html"><i class="fa-brands fa-searchengin" style="font-size: 1.3rem;"></i>About</a></li>
+          <li><a href="product.html"><i class="fa-brands fa-product-hunt" style="font-size: 1.3rem;"></i>Products</a></li>
+          <li><a class="opencartbtn" href="#"><i class="fa-solid fa-cart-shopping" style="font-size: 1.3rem;"></i>Cart</a></li>
+          <span class="quantity">0</span>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <div class="proContent">
+        <h3 class="profound">
+          <p class="prospan"></p>
+          Product found
+        </h3>
+      </div>
+      <div class="allproducts">
+        <!-- ============= -->
+        <!-- <div class="featuredAllProduct">
+                <div class="imgPro">
+                    <a href="#"><img src="images/product20.jpeg" alt="" /></a>
+                </div>
+                <div class="ProtextAll">
+                  <a href="#">Entertenement Center</a>
+                  <a href="#">250$</a>
+                </div>
+            </div> -->
+        <!-- ============ -->
+      </div>
+      <div class="eachproALL">
+
+      </div>
+    </section>
+    <button class="scroll">Go up!</button>
+    <div class="cart">
+      <div class="cartcontainer">
+        <button class="closebtncart">X</button>
+        <h2 class="cartcontainerH2">No Item Founded..Add Some!</h2>
+        <div class="totalpricediv">
+          <h4>Total:</h4>
+          <p class="totalprice"></p>
+          </div>
+        <!-- <button>Add some</button> -->
+    </div>
+
+    <div class="allcartcontent">
+      <!-- <div class="eachcartitem">
+        <div class="imgProtest">
+          <img src="images/product20.jpeg" alt="" />
+      </div>
+      <div class="ProtextAlltest">
+        <p>Entertenement Center</p>
+        <p>250$</p>
+      </div>
+      <div class="cartbuttons">
+        <button>+</button>
+        <p>1</p>
+        <button>-</button>
+      </div>
+      </div>
+    </div> -->
+    </div>
+      <button class="BuyNow">Buy Now!</button>
+
+      <!-- testtttttttttttttttttttt -->
+      
+    <script src="main.js"></script>
+    <!-- <script src="eachproduct.js"></script> -->
+    <script>
+      //open the card
+        let opencartbtn=document.querySelector('.opencartbtn');
+        let closebtncart=document.querySelector('.closebtncart');
+        let body=document.querySelector('body')
+
+        opencartbtn.addEventListener('click',()=>{
+          body.classList.add('active')
+        })
+
+        closebtncart.addEventListener('click',()=>{
+          body.classList.remove('active')
+        })
+
+      //scrollbutoon
+      let scrollbtn=document.querySelector('.scroll');
+scrollbtn.style.display='none';
+
+window.onscroll=function(){
+    if(scrollY >=300){
+        scrollbtn.style.display='block';
+    }
+    else{
+        scrollbtn.style.display='none';
+    }
+}
+
+scrollbtn.onclick=function(){
+    scroll({
+        top:0,
+        left:0,
+        behavior:'smooth',
+    })
+}
+    </script>
+  </body>
+</html>

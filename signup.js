@@ -11,6 +11,23 @@ closebtn.addEventListener('click',()=>{
     body.classList.remove('active');
 
 })
+let createacc=document.querySelector('.createacc');
+createacc.onclick=function(){
+    validation();
+}
+
+//singup validation
+let input1=document.getElementById('input1')
+let input2=document.getElementById('input2')
+let input3=document.getElementById('input3')
+let input4=document.getElementById('input4')
+function validation(){
+    if((input1.value=='' || input1.value==null) || (input2.value=='' || input2.value==null) || (input3.value=='' || input3.value==null) || (input4.value=='' || input4.value==null)){
+        alert('fill all of boxes!')
+        console.log('errorrrrrr')
+    }
+}
+
 
 // let cartlist=document.getElementById('test');
 // console.log(cartlist)
@@ -20,7 +37,6 @@ let signinbtn=document.querySelector('.signinbtn');
 let haveacc =document.querySelector('.haveacc');
 let nameFiled=document.getElementById('nameFiled');
 let confirmpass=document.querySelector('.confirmpass');
-let createacc=document.querySelector('.createacc');
 let signuptext=document.querySelector('.signuptext')
 let signinbtnnew=document.querySelector('.signinbtnnew')
 
@@ -62,3 +78,4 @@ function signuphandler(){
     signinbtn.style.display='inline-block'
     signinbtnnew.style.display='none'
 }
+

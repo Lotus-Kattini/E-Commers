@@ -355,13 +355,11 @@ function changeMinQuantity(key,quantity){
     else{
         cartlists[key].quantity=quantity;
         cartlists[key].price-=productsPrices[key].price;
-        
     }
     Reloadcart();
 }
 
 // each product page
-
 // let detailesbtn=document.querySelector('.details');
 let eachproduct=[];
 
@@ -421,3 +419,4 @@ function initEachPro(){
 // closebtncart.addEventListener('click',()=>{
 //     body.classList.remove('active')
 // })
+

@@ -1,0 +1,102 @@
+.Buying{
+    background-color: #ab7a5f;
+    border-radius: 2rem;
+    width: 36rem;
+    margin-left: 27rem;
+    padding: 3rem 0;
+    position: fixed;
+    top: 10rem;
+    display: none;
+    z-index: 999;
+}
+
+.activee .Buying{
+    display: block;
+}
+
+.activee .cart{
+    opacity: 50%;
+}
+.activee .allproducts{
+    opacity: 50%;
+}
+
+.Buying h1{
+    font-size: 2rem;
+    color: #453227;
+    padding-bottom: 1rem;
+    text-align: left;
+    padding-left: 8rem;
+}
+.Uinputs{
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    font-size: 1.4rem;
+    color: #decbc0;
+}
+.Uinputs input{
+    width: 20rem;
+    border: none;
+    border-radius: 4px;
+    height: 1.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.buyimage img{
+    width: 10rem;
+    margin-left: 10rem;
+}
+
+.buyinfo{
+    margin-left: 8rem;
+}
+
+.inputs{
+    display: flex;
+    gap: 0.2rem;
+}
+
+.inputs input{
+    width: 6.6rem;
+    border: none;
+    border-radius: 4px;
+    height: 1.6rem;
+    /* margin-bottom: 0.7rem; */
+}
+
+.uniqinput{
+    width: 20.1rem;
+    border: none;
+    border-radius: 4px;
+    height: 1.6rem;
+    margin-bottom: 0.3rem;
+}
+.send{
+    background-color: #453227;
+    margin-left: 17rem;
+    margin-top: 0.3rem;
+    border: none;
+    padding: 0.5rem;
+    color: #fff;
+    transition: all 0.4s ease;
+    border-radius: 0.4rem;
+}
+.send:hover{
+    cursor: pointer;
+    background-color:#321d11;
+}
+.close{
+    border: none;
+    padding: 0.5rem;
+    background-color: #decbc0;
+    color: #453227;
+    border-radius: 0.5rem;
+    margin-left: 27rem;
+    transition: all 0.4s ease;
+}
+
+.close:hover{
+    cursor: pointer;
+    background-color: #c8ad9d;
+}
